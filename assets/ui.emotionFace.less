@@ -1,0 +1,123 @@
+//常量
+@widthNum : 7;
+@heightNum : 4;
+
+.hide {
+    visibility: hidden !important;
+    display: none !important;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.emotionFaceBox {
+    position:absolute;
+    display:none;
+    z-index:1000;
+    width: 320px;
+    height: 182px;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: #eee;
+    box-shadow: 1px 1px 6px #888888;
+    -webkit-box-shadow: 1px 1px 6px #888888;
+    -moz-box-shadow: 1px 1px 6px #888888;
+    -o-box-shadow: 1px 1px 6px #888888;
+    -ms-box-shadow: 1px 1px 6px #888888;
+    overflow: hidden;
+
+    //禁止选择文字
+    &{
+        moz-user-select: -moz-none;
+        -moz-user-select: none;
+        -o-user-select:none;
+        -khtml-user-select:none; 
+        -webkit-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+    }
+
+    //表情页切换按钮容器
+    .changeFaceBox {
+        position:absolute;
+        display: block;
+        bottom: 15px;
+        left: 50%;
+        width: 70px;
+        margin-left: -35px;
+        
+        .faceBtn {
+            display: block;
+            float: left;
+            width: 7px;
+            height: 7px;
+            margin-right: 5px;
+            background: url('./img/change-1.jpg') no-repeat;
+            cursor: pointer;
+            
+            &.active {
+                background: url('./img/change-2.jpg') no-repeat;
+            }
+            
+            &:hover {
+                background: url('./img/change-2.jpg') no-repeat;
+            }
+        }
+    }
+    //滚动容器
+    .faceScrollBox {
+        width: (30+ 20px) * @widthNum * 5;
+        height: (30 + 14px) * @heightNum;
+    }
+    //表情页样式
+    ul.facePage {
+        float: left;
+        width: (30 + 18px) * @widthNum;
+        height: (30 + 14px) * @heightNum;
+        background-color: #eee;
+    }
+    //各表情元素样式
+    .faceImg {
+        display: block;
+        float: left;
+        margin: 0 18px 14px 0;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+       
+        
+        img {
+            width: 100%;
+            height: 100%;   
+        }
+        
+        .createImgCss(em_, 1,20);
+        .createImgCss(em_, 101,152);
+        .createImgCss(em_, 201,313);
+    }
+    //删除元素样式
+    //表情包元素样式
+    .face-deleteBtn {
+        display: block;
+        float: left;
+        margin: 5px 18px 14px 0;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url('./img/close.png') no-repeat;
+    }
+}
+
+ 
+ //按规则生成图片css
+ .createImgCss(@tip: em_, @rangeLeft: 101, @rangeRight: 152) when (@rangeLeft =< @rangeRight){
+     &.@{tip}@{rangeLeft} {
+         background: url('./img/@{rangeLeft}.png?__spriter') no-repeat ;
+         background-size: 100%;
+     }
+     .createImgCss(@tip, @rangeLeft+1, @rangeRight);
+ }

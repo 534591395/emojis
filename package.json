@@ -1,0 +1,18 @@
+{
+  "name": "emojis",
+  "version": "1.0.0",
+  "description": "emo表情包组件 emojis",
+  "keywords": "emo表情包组件 emojis",
+  "private": false,
+  "license": "ISC",
+  "author": "白云飘飘",
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "mocha-phantomjs-core": "^1.3.1",
+    "gulp-less": "^3.1.0",
+    "gulp": "^3.9.1"
+  }
+}

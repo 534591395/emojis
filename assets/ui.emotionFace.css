@@ -1,0 +1,828 @@
+.hide {
+  visibility: hidden !important;
+  display: none !important;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.emotionFaceBox {
+  position: absolute;
+  display: none;
+  z-index: 1000;
+  width: 320px;
+  height: 182px;
+  padding: 15px;
+  border-radius: 7px;
+  background-color: #eee;
+  box-shadow: 1px 1px 6px #888888;
+  -webkit-box-shadow: 1px 1px 6px #888888;
+  -moz-box-shadow: 1px 1px 6px #888888;
+  -o-box-shadow: 1px 1px 6px #888888;
+  -ms-box-shadow: 1px 1px 6px #888888;
+  overflow: hidden;
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.emotionFaceBox .changeFaceBox {
+  position: absolute;
+  display: block;
+  bottom: 15px;
+  left: 50%;
+  width: 70px;
+  margin-left: -35px;
+}
+.emotionFaceBox .changeFaceBox .faceBtn {
+  display: block;
+  float: left;
+  width: 7px;
+  height: 7px;
+  margin-right: 5px;
+  background: url('img/change-1.jpg') no-repeat;
+  cursor: pointer;
+}
+.emotionFaceBox .changeFaceBox .faceBtn.active {
+  background: url('img/change-2.jpg') no-repeat;
+}
+.emotionFaceBox .changeFaceBox .faceBtn:hover {
+  background: url('img/change-2.jpg') no-repeat;
+}
+.emotionFaceBox .faceScrollBox {
+  width: 1750px;
+  height: 176px;
+}
+.emotionFaceBox ul.facePage {
+  float: left;
+  width: 336px;
+  height: 176px;
+  background-color: #eee;
+}
+.emotionFaceBox .faceImg {
+  display: block;
+  float: left;
+  margin: 0 18px 14px 0;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.emotionFaceBox .faceImg img {
+  width: 100%;
+  height: 100%;
+}
+.emotionFaceBox .faceImg.em_1 {
+  background: url('img/1.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_2 {
+  background: url('img/2.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_3 {
+  background: url('img/3.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_4 {
+  background: url('img/4.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_5 {
+  background: url('img/5.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_6 {
+  background: url('img/6.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_7 {
+  background: url('img/7.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_8 {
+  background: url('img/8.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_9 {
+  background: url('img/9.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_10 {
+  background: url('img/10.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_11 {
+  background: url('img/11.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_12 {
+  background: url('img/12.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_13 {
+  background: url('img/13.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_14 {
+  background: url('img/14.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_15 {
+  background: url('img/15.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_16 {
+  background: url('img/16.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_17 {
+  background: url('img/17.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_18 {
+  background: url('img/18.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_19 {
+  background: url('img/19.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_20 {
+  background: url('img/20.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_101 {
+  background: url('img/101.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_102 {
+  background: url('img/102.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_103 {
+  background: url('img/103.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_104 {
+  background: url('img/104.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_105 {
+  background: url('img/105.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_106 {
+  background: url('img/106.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_107 {
+  background: url('img/107.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_108 {
+  background: url('img/108.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_109 {
+  background: url('img/109.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_110 {
+  background: url('img/110.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_111 {
+  background: url('img/111.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_112 {
+  background: url('img/112.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_113 {
+  background: url('img/113.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_114 {
+  background: url('img/114.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_115 {
+  background: url('img/115.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_116 {
+  background: url('img/116.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_117 {
+  background: url('img/117.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_118 {
+  background: url('img/118.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_119 {
+  background: url('img/119.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_120 {
+  background: url('img/120.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_121 {
+  background: url('img/121.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_122 {
+  background: url('img/122.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_123 {
+  background: url('img/123.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_124 {
+  background: url('img/124.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_125 {
+  background: url('img/125.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_126 {
+  background: url('img/126.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_127 {
+  background: url('img/127.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_128 {
+  background: url('img/128.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_129 {
+  background: url('img/129.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_130 {
+  background: url('img/130.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_131 {
+  background: url('img/131.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_132 {
+  background: url('img/132.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_133 {
+  background: url('img/133.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_134 {
+  background: url('img/134.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_135 {
+  background: url('img/135.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_136 {
+  background: url('img/136.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_137 {
+  background: url('img/137.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_138 {
+  background: url('img/138.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_139 {
+  background: url('img/139.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_140 {
+  background: url('img/140.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_141 {
+  background: url('img/141.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_142 {
+  background: url('img/142.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_143 {
+  background: url('img/143.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_144 {
+  background: url('img/144.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_145 {
+  background: url('img/145.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_146 {
+  background: url('img/146.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_147 {
+  background: url('img/147.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_148 {
+  background: url('img/148.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_149 {
+  background: url('img/149.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_150 {
+  background: url('img/150.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_151 {
+  background: url('img/151.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_152 {
+  background: url('img/152.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_201 {
+  background: url('img/201.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_202 {
+  background: url('img/202.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_203 {
+  background: url('img/203.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_204 {
+  background: url('img/204.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_205 {
+  background: url('img/205.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_206 {
+  background: url('img/206.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_207 {
+  background: url('img/207.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_208 {
+  background: url('img/208.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_209 {
+  background: url('img/209.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_210 {
+  background: url('img/210.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_211 {
+  background: url('img/211.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_212 {
+  background: url('img/212.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_213 {
+  background: url('img/213.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_214 {
+  background: url('img/214.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_215 {
+  background: url('img/215.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_216 {
+  background: url('img/216.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_217 {
+  background: url('img/217.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_218 {
+  background: url('img/218.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_219 {
+  background: url('img/219.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_220 {
+  background: url('img/220.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_221 {
+  background: url('img/221.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_222 {
+  background: url('img/222.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_223 {
+  background: url('img/223.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_224 {
+  background: url('img/224.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_225 {
+  background: url('img/225.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_226 {
+  background: url('img/226.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_227 {
+  background: url('img/227.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_228 {
+  background: url('img/228.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_229 {
+  background: url('img/229.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_230 {
+  background: url('img/230.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_231 {
+  background: url('img/231.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_232 {
+  background: url('img/232.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_233 {
+  background: url('img/233.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_234 {
+  background: url('img/234.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_235 {
+  background: url('img/235.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_236 {
+  background: url('img/236.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_237 {
+  background: url('img/237.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_238 {
+  background: url('img/238.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_239 {
+  background: url('img/239.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_240 {
+  background: url('img/240.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_241 {
+  background: url('img/241.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_242 {
+  background: url('img/242.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_243 {
+  background: url('img/243.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_244 {
+  background: url('img/244.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_245 {
+  background: url('img/245.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_246 {
+  background: url('img/246.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_247 {
+  background: url('img/247.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_248 {
+  background: url('img/248.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_249 {
+  background: url('img/249.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_250 {
+  background: url('img/250.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_251 {
+  background: url('img/251.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_252 {
+  background: url('img/252.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_253 {
+  background: url('img/253.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_254 {
+  background: url('img/254.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_255 {
+  background: url('img/255.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_256 {
+  background: url('img/256.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_257 {
+  background: url('img/257.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_258 {
+  background: url('img/258.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_259 {
+  background: url('img/259.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_260 {
+  background: url('img/260.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_261 {
+  background: url('img/261.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_262 {
+  background: url('img/262.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_263 {
+  background: url('img/263.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_264 {
+  background: url('img/264.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_265 {
+  background: url('img/265.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_266 {
+  background: url('img/266.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_267 {
+  background: url('img/267.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_268 {
+  background: url('img/268.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_269 {
+  background: url('img/269.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_270 {
+  background: url('img/270.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_271 {
+  background: url('img/271.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_272 {
+  background: url('img/272.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_273 {
+  background: url('img/273.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_274 {
+  background: url('img/274.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_275 {
+  background: url('img/275.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_276 {
+  background: url('img/276.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_277 {
+  background: url('img/277.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_278 {
+  background: url('img/278.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_279 {
+  background: url('img/279.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_280 {
+  background: url('img/280.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_281 {
+  background: url('img/281.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_282 {
+  background: url('img/282.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_283 {
+  background: url('img/283.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_284 {
+  background: url('img/284.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_285 {
+  background: url('img/285.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_286 {
+  background: url('img/286.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_287 {
+  background: url('img/287.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_288 {
+  background: url('img/288.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_289 {
+  background: url('img/289.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_290 {
+  background: url('img/290.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_291 {
+  background: url('img/291.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_292 {
+  background: url('img/292.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_293 {
+  background: url('img/293.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_294 {
+  background: url('img/294.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_295 {
+  background: url('img/295.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_296 {
+  background: url('img/296.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_297 {
+  background: url('img/297.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_298 {
+  background: url('img/298.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_299 {
+  background: url('img/299.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_300 {
+  background: url('img/300.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_301 {
+  background: url('img/301.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_302 {
+  background: url('img/302.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_303 {
+  background: url('img/303.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_304 {
+  background: url('img/304.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_305 {
+  background: url('img/305.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_306 {
+  background: url('img/306.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_307 {
+  background: url('img/307.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_308 {
+  background: url('img/308.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_309 {
+  background: url('img/309.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_310 {
+  background: url('img/310.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_311 {
+  background: url('img/311.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_312 {
+  background: url('img/312.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .faceImg.em_313 {
+  background: url('img/313.png?__spriter') no-repeat;
+  background-size: 100%;
+}
+.emotionFaceBox .face-deleteBtn {
+  display: block;
+  float: left;
+  margin: 5px 18px 14px 0;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: url('img/close.png') no-repeat;
+}
