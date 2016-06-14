@@ -245,6 +245,7 @@ define(function(require,exports,module){
             }
             for(var i=0; i<arrays.length; i++) {
                 for(var k = arrays[i][0]; k <= arrays[i][1]; k++ ) {
+                    //这里只需要判断是否IE8，IE8以上浏览器支持 background-size:100%；下个 手机版以及图片合并版修改。
                     if(navigator.userAgent.indexOf("MSIE")>0) { //如果是IE
                        innerString += '<li class="faceImg" data-labFace="['+this.options.tip+k+']"><img src="'+this.options.path+k+'.png" data-labFace = "['+this.options.tip+k+']" /></li>';  
                     } else {
